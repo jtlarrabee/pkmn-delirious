@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-// const AWS = require('aws-sdk');
+const DDB = require('@aws-sdk/client-dynamodb');
 
 // Get the necessary data to create a Pokemon.
 const gen1 = require('../data/pokedex/gen1.json');
