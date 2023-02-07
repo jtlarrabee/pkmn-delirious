@@ -1,0 +1,13 @@
+{
+    "location": "city of dreams",
+    "channelID": "1000829244357754930",
+    "spawns": {
+        "common": [81, 100, 109],
+        "uncommon": [82, 101],
+        "rare": [52, 110, 133, 137],
+        "srare": [53, 122],
+        "epic": [132],
+        "legendary": [],
+        "mythic": []
+    }
+}

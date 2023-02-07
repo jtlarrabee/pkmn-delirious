@@ -1,0 +1,272 @@
+[
+    {
+        "name": "oran",
+        "category": "restore",
+        "restore": "hp",
+        "value": 10
+    },
+    {
+        "name": "sitrus",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25
+    },
+    {
+        "name": "figy",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25,
+        "dislike": "spicy"
+    },
+    {
+        "name": "wiki",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25,
+        "dislike": "dry"
+    },
+    {
+        "name": "mago",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25,
+        "dislike": "sweet"
+    },
+    {
+        "name": "aguav",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25,
+        "dislike": "bitter"
+    },
+    {
+        "name": "iapapa",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25,
+        "dislike": "sour"
+    },
+    {
+        "name": "enigma",
+        "category": "restore",
+        "restore": "hp",
+        "value": 0.25,
+        "supereffective": true
+    },
+    {
+        "name": "leppa",
+        "category": "restore",
+        "restore": "pp",
+        "value": 10
+    },
+    {
+        "name": "cheri",
+        "category": "cure",
+        "condition": "paralysis"
+    },
+    {
+        "name": "chesto",
+        "category": "cure",
+        "condition": "sleep"
+    },
+    {
+        "name": "pecha",
+        "category": "cure",
+        "condition": "poison"
+    },
+    {
+        "name": "rawst",
+        "category": "cure",
+        "condition": "burn"
+    },
+    {
+        "name": "aspear",
+        "category": "cure",
+        "condition": "freeze"
+    },
+    {
+        "name": "persim",
+        "category": "cure",
+        "condition": "confusion"
+    },
+    {
+        "name": "lum",
+        "category": "cure",
+        "condition": "non-volatile"
+    },
+    {
+        "name": "occa",
+        "category": "protection",
+        "type": "fire"
+    },
+    {
+        "name": "passho",
+        "category": "protection",
+        "type": "water"
+    },
+    {
+        "name": "wacan",
+        "category": "protection",
+        "type": "electric"
+    },
+    {
+        "name": "rindo",
+        "category": "protection",
+        "type": "grass"
+    },
+    {
+        "name": "yache",
+        "category": "protection",
+        "type": "ice"
+    },
+    {
+        "name": "chople",
+        "category": "protection",
+        "type": "fighting"
+    },
+    {
+        "name": "kebia",
+        "category": "protection",
+        "type": "poison"
+    },
+    {
+        "name": "shuca",
+        "category": "protection",
+        "type": "ground"
+    },
+    {
+        "name": "coba",
+        "category": "protection",
+        "type": "flying"
+    },
+    {
+        "name": "payapa",
+        "category": "protection",
+        "type": "psychic"
+    },
+    {
+        "name": "tanga",
+        "category": "protection",
+        "type": "bug"
+    },
+    {
+        "name": "charti",
+        "category": "protection",
+        "type": "rock"
+    },
+    {
+        "name": "kasib",
+        "category": "protection",
+        "type": "ghost"
+    },
+    {
+        "name": "haban",
+        "category": "protection",
+        "type": "dragon"
+    },
+    {
+        "name": "colbur",
+        "category": "protection",
+        "type": "dark"
+    },
+    {
+        "name": "babiri",
+        "category": "protection",
+        "type": "steel"
+    },
+    {
+        "name": "chilan",
+        "category": "protection",
+        "type": "normal"
+    },
+    {
+        "name": "roseli",
+        "category": "protection",
+        "type": "fairy"
+    },
+    {
+        "name": "liechi",
+        "category": "battle",
+        "stat": "atk"
+    },
+    {
+        "name": "ganlon",
+        "category": "battle",
+        "stat": "def"
+    },
+    {
+        "name": "salac",
+        "category": "battle",
+        "stat": "spd"
+    },
+    {
+        "name": "petaya",
+        "category": "battle",
+        "stat": "spatk"
+    },
+    {
+        "name": "apicot",
+        "category": "battle",
+        "stat": "spdef"
+    },
+    {
+        "name": "starf",
+        "category": "battle",
+        "stat": "random"
+    },
+    {
+        "name": "custap",
+        "category": "battle",
+        "priority":  true
+    },
+    {
+        "name": "jaboca",
+        "category": "battle",
+        "reflect": "physical"
+    },
+    {
+        "name": "rowap",
+        "category": "battle",
+        "reflect": "special"
+    },
+    {
+        "name": "kee",
+        "category": "battle",
+        "defense": "physical"
+    },
+    {
+        "name": "maranga",
+        "category": "battle",
+        "defense": "special"
+    },
+    {
+        "name": "pomeg",
+        "category": "ev",
+        "stat": "hp"
+    },
+    {
+        "name": "kelpsey",
+        "category": "ev",
+        "stat": "atk"
+    },
+    {
+        "name": "qualot",
+        "category": "ev",
+        "stat": "def"
+    },
+    {
+        "name": "hondew",
+        "category": "ev",
+        "stat": "spatk"
+    },
+    {
+        "name": "grepa",
+        "category": "ev",
+        "stat": "spdef"
+    },
+    {
+        "name": "tamato",
+        "category": "ev",
+        "stat": "spd"
+    }
+]

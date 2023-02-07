@@ -1,0 +1,13 @@
+{
+    "location": "golden coast",
+    "channelID": "1000829427728515152",
+    "spawns": {
+        "common": [16, 72, 79, 90, 98, 116, 118, 120, 129],
+        "uncommon": [17, 80, 91, 99, 117, 119],
+        "rare": [18, 73, 121],
+        "srare": [],
+        "epic": [130, 132, 149],
+        "legendary": [],
+        "mythic": []
+    }
+}

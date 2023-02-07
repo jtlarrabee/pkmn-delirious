@@ -1,0 +1,202 @@
+[
+    {
+        "name": "hardy",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "lonely",
+        "atkmod": 1.1,
+        "defmod": 0.9,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "brave",
+        "atkmod": 1.1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 0.9
+    },
+    {
+        "name": "adamant",
+        "atkmod": 1.1,
+        "defmod": 1,
+        "spatkmod": 0.9,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "naughty",
+        "atkmod": 1.1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 0.9,
+        "spdmod": 1
+    },
+    {
+        "name": "bold",
+        "atkmod": 0.9,
+        "defmod": 1.1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "docile",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "relaxed",
+        "atkmod": 1,
+        "defmod": 1.1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 0.9
+    },
+    {
+        "name": "impish",
+        "atkmod": 1,
+        "defmod": 1.1,
+        "spatkmod": 0.9,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "lax",
+        "atkmod": 1,
+        "defmod": 1.1,
+        "spatkmod": 1,
+        "spdefmod": 0.9,
+        "spdmod": 1
+    },
+    {
+        "name": "timid",
+        "atkmod": 0.9,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1.1
+    },
+    {
+        "name": "hasty",
+        "atkmod": 1,
+        "defmod": 0.9,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1.1
+    },
+    {
+        "name": "serious",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "jolly",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 0.9,
+        "spdefmod": 1,
+        "spdmod": 1.1
+    },
+    {
+        "name": "naive",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 0.9,
+        "spdmod": 1.1
+    },
+    {
+        "name": "modest",
+        "atkmod": 0.9,
+        "defmod": 1,
+        "spatkmod": 1.1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "mild",
+        "atkmod": 1,
+        "defmod": 0.9,
+        "spatkmod": 1.1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "quiet",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1.1,
+        "spdefmod": 1,
+        "spdmod": 0.9
+    },
+    {
+        "name": "bashful",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    },
+    {
+        "name": "rash",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1.1,
+        "spdefmod": 0.9,
+        "spdmod": 1
+    },
+    {
+        "name": "calm",
+        "atkmod": 0.9,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1.1,
+        "spdmod": 1
+    },
+    {
+        "name": "gentle",
+        "atkmod": 1,
+        "defmod": 0.9,
+        "spatkmod": 1,
+        "spdefmod": 1.1,
+        "spdmod": 1
+    },
+    {
+        "name": "sassy",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1.1,
+        "spdmod": 0.9
+    },
+    {
+        "name": "careful",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 0.9,
+        "spdefmod": 1.1,
+        "spdmod": 1
+    },
+    {
+        "name": "quirky",
+        "atkmod": 1,
+        "defmod": 1,
+        "spatkmod": 1,
+        "spdefmod": 1,
+        "spdmod": 1
+    }
+]

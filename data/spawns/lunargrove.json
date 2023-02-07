@@ -1,0 +1,13 @@
+{
+    "location": "lunar grove",
+    "channelID": "1000829504714973285",
+    "spawns": {
+        "common": [46],
+        "uncommon": [47],
+        "rare": [35],
+        "srare": [36],
+        "epic": [132],
+        "legendary": [],
+        "mythic": []
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "location": "thundering coast",
+    "channelID": "1000829625917788262",
+    "spawns": {
+        "common": [54, 60, 72, 98, 116, 118, 129],
+        "uncommon": [61, 99, 117, 119],
+        "rare": [7, 55, 73],
+        "srare": [8, 25, 62, 125, 135],
+        "epic": [9, 26, 130, 132],
+        "legendary": [145],
+        "mythic": []
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "common": 0.50,
+    "uncommon": 0.275,
+    "rare": 0.1525,
+    "srare": 0.05,
+    "epic": 0.021,
+    "legendary": 0.001,
+    "mythic": 0.0005,
+    "shiny": 0.000125
+}

@@ -1,0 +1,207 @@
+Features:
+    • Access an in-depth shop with tons of different ways to spend your Pokédollars!
+    • Battle other players!
+    • Catch Pokémon from Generation 1! (Other generations coming soon.)
+    • Challenge players who are Gym Leaders, Elite Four members, and even the Pokémon Champion!
+    • Constantly spawning Pokémon for each trainer involved!
+    • Target specific Pokémon spawning by going to different locations!
+    • Trade Pokémon with other players!
+    • Various events and giveaways!
+
+Commands:
+    /battle [target] - Start a Pokémon battle.
+    /challenge [champion | elitefour | gym] [number] - Challenge a gym leader, Elite Four member, or the Pokémon Champion.
+    /ev [pokémon] - Check the EVs for the specified Pokémon.
+    /iv [pokémon] - Check the IVs for the specified Pokémon.
+    /pc - Open your PC, allowing you to view all of the Pokémon you have.
+    /pokédex - Check which Pokémon you've caught.
+    /release [pokémon] - Release the specified Pokémon.
+    /shop - Access the shop.
+        purchase [item] [amount] - Purchase the specified amount of the specified item.
+        sell [item] [amount] - Sell the specified amount of the specified item.
+    /starter - Claim your starter Pokémon. Only works once per player.
+    /trade [target] - Start a trade.
+    /travel [location] - Travel to the specified location.
+    /use [item] [amount] [pokémon] - Use the specified amound of the specified item on the specified Pokémon.
+
+Rates:
+    Common - 50
+    Uncommon - 27.5
+    Rare - 15.25
+    Super Rare - 5.0
+    Epic - 2.1
+    Legendary - 0.1
+    Mythic - 0.05
+    Shiny - 0.0125
+
+Map:
+    Ashlands - 
+    Aurora Glacier -
+    City of Dreams -
+    Dread Mire - A dark and gloomy swamp. Some say it's haunted.
+    Frozen Sea - 
+    Golden Coast - 
+    Howling Canyon - A deep canyon with various cave systems.
+    Lunar Grove -
+    Mirror Lake -
+    Overgrowth -
+    Scorching Sands -
+    Shimmering Reef - A vibrant coral reef just off the Golden Coast.
+    Shrouded Peaks -
+    Thundering Coast - A temparate coastal region known for its constant rain and thunderstorms.
+    Tranquil Forest - 
+    Volcanic Islands - 
+    Windswept Plains -
+
+Pokémon:
+    001 - Bulbasaur - Rare - Tranquil Forest, Overgrowth
+    002 - Ivysaur - Super Rare - Tranquil Forest, Overgrowth
+    003 - Venesaur - Epic - Tranquil Forest, Overgrowth
+    004 - Charmander - Rare - Ashlands, Howling Canyon, Windswept Plains
+    005 - Charmeleon - Super Rare - Ashlands, Howling Canyon, Windswept Plains
+    006 - Charizard - Epic - Ashlands, Howling Canyon, Windswept Plains
+    007 - Squirtle - Rare - Mirror Lake, Thundering Coast
+    008 - Wartortle - Super Rare - Mirror Lake, Thundering Coast
+    009 - Blastoise - Epic - Mirror Lake, Thundering Coast
+    010 - Caterpie - Common - Tranquil Forest, Overgrowth
+    011 - Metapod - Uncommon - Tranquil Forest, Overgrowth
+    012 - Butterfree - Rare - Tranquil Forest, Overgrowth
+    013 - Weedle - Common - Dread Mire, Tranquil Forest, Overgrowth
+    014 - Kakuna - Uncommon - Dread Mire, Tranquil Forest, Overgrowth
+    015 - Beedrill - Rare - Dread Mire, Tranquil Forest, Overgrowth
+    016 - Pidgey - Common - Tranquil Forest, Golden Coast, Mirror Lake, Windswept Plains
+    017 - Pidgeotto - Uncommon - Tranquil Forest, Golden Coast, Mirror Lake, Windswept Plains
+    018 - Pidgeot - Rare - Tranquil Forest, Golden Coast, Mirror Lake, Windswept Plains
+    019 - Rattata - Common - Tranquil Forest, Howling Canyon, Mirror Lake, Windswept Plains
+    020 - Raticate - Uncommon - Tranquil Forest, Howling Canyon, Mirror Lake, Windswept Plains
+    021 - Spearow - Common - Tranquil Forest, Howling Canyon, Shrouded Peaks, Windswept Plains
+    022 - Fearow - Uncommon - Tranquil Forest, Howling Canyon, Shrouded Peaks, Windswept Plains
+    023 - Ekans - Common - Dread Mire, Tranquil Forest, Overgrowth, Volcanic Islands
+    024 - Arbok - Rare - Dread Mire, Tranquil Forest, Overgrowth, Volcanic Islands
+    025 - Pikachu - Super Rare - Tranquil Forest, Thundering Coast
+    026 - Raichu - Epic - Tranquil Forest, Thundering Coast
+    027 - Sandshrew - Common - Scorching Sands, Howling Canyon, Oasis
+    028 - Sandslash - Uncommon - Scorching Sands, Howling Canyon, Oasis
+    029 - Nidoran (F) - Common - Dread Mire, Overgrowth
+    030 - Noidorina - Uncommon - Dread Mire, Overgrowth
+    031 - Nidoqueen - Super Rare - Dread Mire, Overgrowth
+    032 - Nidoran (M) - Common - Dread Mire, Overgrowth
+    033 - Nidorino - Uncommon - Dread Mire, Overgrowth
+    034 - Nidoking - Super Rare - Dread Mire, Overgrowth
+    035 - Clefairy - Rare - Howling Canyon, Lunar Grove
+    036 - Clefable - Super Rare - Howling Canyon, Lunar Grove
+    037 - Vulpix - Rare - Ashlands, Tranquil Forest
+    038 - Ninetales - Super Rare - Ashlands, Tranquil Forest
+    039 - Jigglypuff - Uncommon - Windswept Plains
+    040 - Wigglytuff - Super Rare - Windswept Plains
+    041 - Zubat - Common - Dread Mire, Tranquil Forest, Howling Canyon, Overgrowth, Volcanic Islands
+    042 - Golbat - Uncommon - Dread Mire, Tranquil Forest, Howling Canyon, Overgrowth, Volcanic Islands
+    043 - Oddish - Common - Tranquil Forest, Overgrowth, Mirror Lake, Volcanic Islands
+    044 - Gloom - Uncommon - Tranquil Forest, Overgrowth, Mirror Lake, Volcanic Islands
+    045 - Vileplume - Rare - Tranquil Forest, Overgrowth, Mirror Lake, Volcanic Islands
+    046 - Paras - Common - Tranquil Forest, Howling Canyon, Lunar Grove
+    047 - Parasect - Uncommon - Tranquil Forest, Howling Canyon, Lunar Grove
+    048 - Venonat - Common - Dread Mire, Overgrowth, Volcanic Islands
+    049 - Venomoth - Rare - Dread Mire, Overgrowth, Volcanic Islands
+    050 - Diglett - Common - Scorching Sands, Howling Canyon
+    051 - Dugtrio - Uncommon - Scorching Sands, Howling Canyon
+    052 - Meowth - Rare - City of Dreams, Windswept Plains
+    053 - Persian - Super Rare - City of Dreams, Windswept Plains
+    054 - Psyduck - Common - Mirror Lake, Thundering Coast
+    055 - Golduck - Rare - Mirror Lake, Thundering Coast
+    056 - Mankey - Common - Overgrowth, Volcanic Islands
+    057 - Primeape - Rare - Overgrowth, Volcanic Islands
+    058 - Growlithe - Super Rare - Ashlands, Windswept Plains
+    059 - Arcanine - Epic - Ashlands, Windswept Plains
+    060 - Poliwag - Common - Mirror Lake, Thundering Coast
+    061 - Poliwhirl - Uncommon - Mirror Lake, Thundering Coast
+    062 - Poliwrath - Super Rare - Mirror Lake, Thundering Coast
+    063 - Abra - Rare - Tranquil Forest
+    064 - Kadabra - Rare - Tranquil Forest
+    065 - Alakazam - Super Rare - Tranquil Forest
+    066 - Machop - Common - Howling Canyon
+    067 - Machoke - Rare - Howling Canyon
+    068 - Machamp - Super Rare - Howling Canyon
+    069 - Bellsprout - Common - Overgrowth, Volcanic Islands
+    070 - Weepinbell - Uncommon - Overgrowth, Volcanic Islands
+    071 - Victreebel - Super Rare - Overgrowth, Volcanic Islands
+    072 - Tentacool - Common - Golden Coast, Shimmering Reef
+    073 - Tentacruel - Rare - Golden Coast, Shimmering Reef
+    074 - Geodude - Common - Howling Canyon, Shrouded Peaks
+    075 - Graveler - Uncommon - Howling Canyon, Shrouded Peaks
+    076 - Golem - Super Rare - Howling Canyon, Shrouded Peaks
+    077 - Ponyta - Common - Ashlands, Windswept Plains
+    078 - Rapidash - Uncommon - Ashlands, Windswept Plains
+    079 - Slowpoke - Common - Golden Coast, Mirror Lake, Volcanic Islands
+    080 - Slowbro - Uncommon - Golden Coast, Mirror Lake, Volcanic Islands
+    081 - Magnemite - Common - City of Dreams, Howling Canyon
+    082 - Magneton - Uncommon - City of Dreams, Howling Canyon
+    083 - Farfetch'd - Rare - Tranquil Forest, Windswept Plains
+    084 - Doduo - Common - Windswept Plains
+    085 - Dodrio - Uncommon - Windswept Plains
+    086 - Seel - Common - Aurora Glacier, Frozen Sea
+    087 - Dewgong - Rare - Aurora Glacier, Frozen Sea
+    088 - Grimer - Common - City of Dreams, Dread Mire
+    089 - Muk - Rare - City of Dreams, Dread Mire
+    090 - Shellder - Common - Aurora Glacier, Frozen Sea, Golden Coast
+    091 - Cloyster - Uncommon - Aurora Glacier, Frozen Sea, Golden Coast
+    092 - Gastly - Uncommon - Dread Mire
+    093 - Haunter - Super Rare - Dread Mire
+    094 - Gengar - Epic - Dread Mire
+    095 - Onix - Rare - Howling Canyon, Shrouded Peaks
+    096 - Drowzee - Common - Windswept Plains
+    097 - Hypno - Uncommon - Windswept Plains
+    098 - Krabby - Common - Aurora Glacier, Frozen Sea, Golden Coast, Shimmering Reef, Thundering Coast, Volcanic Islands
+    099 - Kingler - Uncommon - Aurora Glacier, Frozen Sea, Golden Coast, Shimmering Reef, Thundering Coast, Volcanic Islands
+    100 - Voltorb - Common - City of Dreams
+    101 - Electrode - Uncommon - City of Dreams
+    102 - Exeggcute - Common - Overgrowth, Volcanic Islands
+    103 - Exeggutor - Super Rare - Overgrowth, Volcanic Islands
+    104 - Cubone - Rare - Howling Canyon
+    105 - Marowak - Super Rare - Howling Canyon
+    106 - Hitmonlee - Rare - Howling Canyon, Windswept Plains
+    107 - Hitmonchan - Rare - Howling Canyon, Windswept Plains
+    108 - Lickitung - Uncommon - Overgrowth
+    109 - Koffing - Common - City of Dreams, Dread Mire
+    110 - Weezing - Rare - City of Dreams, Dread Mire
+    111 - Rhyhorn - Uncommon - Howling Canyon, Shrouded Peaks
+    112 - Rhydon - Super Rare - Howling Canyon, Shrouded Peaks
+    113 - Chansey - Super Rare - Tranquil Forest, Howling Canyon, Windswept Plains
+    114 - Tangela - Rare - Overgrowth, Volcanic Islands
+    115 - Kangaskhan - Super Rare - Howling Canyon, Windswept Plains
+    116 - Horsea - Common - Golden Coast, Shimmering Reef, Thundering Coast, Volcanic Islands
+    117 - Seadra - Uncommon - Golden Coast, Shimmering Reef, Thundering Coast, Volcanic Islands
+    118 - Goldeen - Common - Aurora Glacier, Frozen Sea, Golden Coast, Mirror Lake, Shimmering Reef, Thundering Coast, Volcanic Islands
+    119 - Seaking - Uncommon - Aurora Glacier, Frozen Sea, Golden Coast, Mirror Lake, Shimmering Reef, Thundering Coast, Volcanic Islands
+    120 - Staryu - Common - Golden Coast, Shimmering Reef, Volcanic Islands
+    121 - Starmie - Rare - Golden Coast, Shimmering Reef, Volcanic Islands
+    122 - Mr. Mime - Super Rare - City of Dreams
+    123 - Scyther - Super Rare - Tranquil Forest, Overgrowth
+    124 - Jynx - Super Rare - Aurora Glacier
+    125 - Electabuzz - Super Rare - Thundering Coast
+    126 - Magmar - Super Rare - Volcanic Islands
+    127 - Pinsir - Super Rare - Overgrowth, Volcanic Islands
+    128 - Tauros - Uncommon - Windswept Plains
+    129 - Magikarp - Common - Frozen Sea, Golden Coast, Mirror Lake, Shimmering Reef, Thundering Coast, Volcanic Islands
+    130 - Gyarados - Epic - Frozen Sea, Golden Coast, Mirror Lake, Shimmering Reef, Thundering Coast, Volcanic Islands
+    131 - Lapras - Epic - Aurora Glacier, Frozen Sea, Shimmering Reef
+    132 - Ditto - Epic - Any
+    133 - Eevee - Rare - City of Dreams, Tranquil Forest, Mirror Lake, Windswept Plains
+    134 - Vaporeon - Super Rare - Mirror Lake
+    135 - Jolteon - Super Rare - Thundering Coast
+    136 - Flareon - Super Rare - Ashlands
+    137 - Porygon - Rare - City of Dreams
+    138 - Omanyte - Super Rare - Shimmering Reef, Volcanic Islands
+    139 - Omastar - Epic - Shimmering Reef, Volcanic Islands
+    140 - Kabuto - Super Rare - Shimmering Reef, Volcanic Islands
+    141 - Kabutops - Epic - Shimmering Reef, Volcanic Islands
+    142 - Aerodactyl - Epic - Volcanic Islands
+    143 - Snorlax - Rare - Tranquil Forest, Shrouded Peaks
+    144 - Articuno - Legendary - Aurora Glacier
+    145 - Zapdos - Legendary - Thundering Coast
+    146 - Moltres - Legendary - Volcanic Islands
+    147 - Dratini - Super Rare - Frozen Sea, Shimmering Reef
+    148 - Dragonair - Super Rare - Frozen Sea, Shimmering Reef
+    149 - Dragonite - Epic - Aurora Glacier, Golden Coast
+    150 - Mewtwo - Mythic - None
+    151 - Mew - Mythic - Overgrowth

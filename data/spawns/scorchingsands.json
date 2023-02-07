@@ -1,0 +1,13 @@
+{
+    "location": "scorching sands",
+    "channelID": "1000851980736024687",
+    "spawns": {
+        "common": [27, 50],
+        "uncommon": [28, 51],
+        "rare": [],
+        "srare": [],
+        "epic": [132],
+        "legendary": [],
+        "mythic": []
+    }
+}

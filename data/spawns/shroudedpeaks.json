@@ -1,0 +1,13 @@
+{
+    "location": "shrouded peaks",
+    "channelID": "1000829609471918111",
+    "spawns": {
+        "common": [21, 74],
+        "uncommon": [22, 75, 111],
+        "rare": [95, 143],
+        "srare": [76, 112],
+        "epic": [132],
+        "legendary": [],
+        "mythic": []
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "location": "ashlands",
+    "channelID": "1000829114007171178",
+    "spawns": {
+        "common": [77],
+        "uncommon": [78],
+        "rare": [4, 37],
+        "srare": [5, 38, 58, 136],
+        "epic": [6, 59, 132],
+        "legendary": [],
+        "mythic": []
+    }
+}

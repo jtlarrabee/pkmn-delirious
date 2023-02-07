@@ -1,0 +1,13 @@
+{
+    "location": "aurora glacier",
+    "channelID": "1000829209482109052",
+    "spawns": {
+        "common": [86, 90, 98, 118],
+        "uncommon": [91, 99, 119],
+        "rare": [87],
+        "srare": [124],
+        "epic": [131, 132, 149],
+        "legendary": [144],
+        "mythic": []
+    }
+}

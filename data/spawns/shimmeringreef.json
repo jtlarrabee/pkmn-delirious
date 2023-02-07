@@ -1,0 +1,13 @@
+{
+    "location": "shimmering reef",
+    "channelID": "1000829586600374312",
+    "spawns": {
+        "common": [72, 90, 98, 116, 118, 120, 129],
+        "uncommon": [91, 99, 117, 119],
+        "rare": [73, 121],
+        "srare": [138, 140, 147, 148],
+        "epic": [130, 131, 132, 139, 141],
+        "legendary": [],
+        "mythic": []
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "location": "frozen sea",
+    "channelID": "1000829388658589777",
+    "spawns": {
+        "common": [86, 90, 98, 118, 129],
+        "uncommon": [91, 99, 119],
+        "rare": [87],
+        "srare": [147, 148],
+        "epic": [130, 131, 132],
+        "legendary": [],
+        "mythic": []
+    }
+}
