@@ -1,5 +1,8 @@
-// Get the ability to write files.
-const fs = require('fs');
+const crypto = require('crypto');
+
+// Set up DynamoDB functionality.
+const ddb = require('@aws-sdk/client-dynamodb');
+const ddbClient = new ddb.DynamoDBClient({region: 'us-east-1'});
 
 // Get the necessary data to create a Pokemon.
 const gen1 = require('../data/pokedex/gen1.json');
@@ -131,7 +134,7 @@ if (sval < rates.shiny) {
 }
 
 // Generate an ID for the Pokemon.
-const uuid = 1;
+const uuid = crypto.randomUUID();
 
 // Create the Pokemon object.
 const pkmn = {
@@ -178,11 +181,5 @@ const pkmn = {
     },
     "shiny": shiny
 };
-
-// Create a file for the new Pokemon.
-let jpkmn = JSON.stringify(pkmn);
-fs.writeFile(`./data/${uuid}.json`, jpkmn, err => {
-    if (err) throw err;
-});
 
 console.log(pkmn);

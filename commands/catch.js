@@ -1,5 +1,9 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const DDB = require('@aws-sdk/client-dynamodb');
+const crypto = require('crypto');
+
+// Set up DynamoDB functionality.
+const ddb = require('@aws-sdk/client-dynamodb');
+const ddbClient = new ddb.DynamoDBClient({region: 'us-east-1'});
 
 // Get the necessary data to create a Pokemon.
 const gen1 = require('../data/pokedex/gen1.json');
@@ -183,13 +187,9 @@ module.exports = {
             },
             "shiny": shiny
         };
-
-        // Create a file for the new Pokemon.
-        let jpkmn = JSON.stringify(pkmn);
-        fs.writeFile(`../data/pokemon/${outid}.json`, jpkmn, err => {
-            if (err) throw err;
-        });
         
+        console.log(pkmn);
+
         await interaction.reply();
     }
 };
