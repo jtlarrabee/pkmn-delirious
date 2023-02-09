@@ -47,9 +47,23 @@ client.on('interactionCreate', async interaction => {
             await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true});
         }
     } else if (interaction.isSelectMenu()) {
+        // Handle starter Pokémon selection.
+        if (interaction.customId == 'starter') {
+            let starter = '';
+            if (interaction.values == '1') {
+                starter = 'Bulbasaur';
+            } else if (interaction.values == '4') {
+                starter = 'Charmander';
+            } else if (interaction.values == '7') {
+                starter = 'Squirtle';
+            }
+
+            await interaction.update({ content: 'You have selected ' + starter + ' as your starter Pokémon! Your registration will be completed shortly.', components:[]});
+        }
+
         // Handle the travel command.
         if (interaction.customId === 'location') {
-            await interaction.update({ content: 'Travelling...', components:[] });
+            await interaction.update({ content: 'Traveling...', components:[] });
 
             for (let i = 0; i < locationRoles.length; i++) {
                 if (interaction.member.roles.cache.has(locationRoles[i])) {
