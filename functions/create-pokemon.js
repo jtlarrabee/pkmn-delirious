@@ -138,6 +138,7 @@ const uuid = crypto.randomUUID();
 
 // Create the Pokemon object.
 const pkmn = {
+    // trainerID: ???,
     "pkmnID": uuid,
     "dexnum": dexnum,
     "name": outname,

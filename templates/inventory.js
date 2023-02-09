@@ -299,6 +299,12 @@ const inventory = {
                 "sea incense": 0,
                 "wave incense": 0
             }
+        },
+        "special": {
+            "iv up": 0,
+            "iv down": 0,
+            "iv max": 0,
+            "shiny candy": 0
         }
     }
 }

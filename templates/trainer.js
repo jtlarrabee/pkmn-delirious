@@ -1,6 +1,5 @@
 const trainer = {
     "userID": discordID,
-    "alias": discordAlias,
     "pokemon": {
         "main": starter,
         "team": [],
