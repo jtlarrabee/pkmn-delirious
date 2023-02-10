@@ -21,10 +21,10 @@ module.exports = {
         };
 
         const regCheckData = await ddbClient.send(new ddb.QueryCommand(regCheckParams));
-        console.log(regCheckData);
+        console.log(regCheckData.Items);
 
         // Register the user if they have not already registered.
-        if (regCheckData.Count == 1) {
+        if (regCheckData.Count == 0) {
             // Create the new trainer object.
             const newtrainer = {
                 "userID": interaction.user.id,
@@ -42,7 +42,8 @@ module.exports = {
             const regTrainerParams = {
                 TableName: "pkmn-delirious-table",
                 Item: {
-                    entity_id: interaction.user.id
+                    entity_id: { S: interaction.user.id },
+                    info: { S: JSON.stringify(newtrainer)}
                 }
             };
 
