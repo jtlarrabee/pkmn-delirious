@@ -167,7 +167,7 @@ client.on('interactionCreate', async interaction => {
             // Create the Pokemon object.
             const starterpkmn = {
                 "pkmnID": uuid,
-                "dexnum-1": dexnum-1,
+                "dexnum": dexnum,
                 "name": outname,
                 "type1": type1,
                 "type2": type2,

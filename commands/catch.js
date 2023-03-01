@@ -17,6 +17,23 @@ module.exports = {
 		.setName('catch')
 		.setDescription('Catch a new Pokémon.'),
     async execute(interaction) {
+        // Query the table to see if  the user has already registered.
+        const regCheckParams = {
+            KeyConditionExpression: "entity_id = :t",
+            ExpressionAttributeValues: {
+                ":t": { S: interaction.user.id}
+            },
+            TableName: "pkmn-delirious-table"
+        };
+
+        const regCheckData = await ddbClient.send(new ddb.QueryCommand(regCheckParams));
+
+        // Inform the user they must register first if they have not done so.
+        if (regCheckData.Count == 0) {
+            await interaction.reply("You must register before you can start catching Pokemon! Please use the `/register` command before continuing.");
+            return(console.log("Directing " + interaction.user + " to register first."));
+        }
+
         // Determine which generation the Pokemon is from.
         const dexnum = Math.floor((Math.random() * 151) + 1);
         let generation = 0;
