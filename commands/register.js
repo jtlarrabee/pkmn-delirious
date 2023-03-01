@@ -21,7 +21,6 @@ module.exports = {
         };
 
         const regCheckData = await ddbClient.send(new ddb.QueryCommand(regCheckParams));
-        console.log(regCheckData.Items);
 
         // Register the user if they have not already registered.
         if (regCheckData.Count == 0) {
@@ -398,6 +397,8 @@ module.exports = {
             );
 
             await interaction.reply({ components: [row] });
-        };
-    }
+        } else {
+            await interaction.reply("You are already registered.");
+        }
+    } 
 };

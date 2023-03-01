@@ -25,21 +25,21 @@ module.exports = {
         }
 
         // Generate and format all the information for the new Pokemon.
-        const inname = genlist[generation-1][dexnum].name.split(" ");
+        const inname = genlist[generation-1][dexnum-1].name.split(" ");
         for (let i = 0; i < inname.length; i++) {
             inname[i] = inname[i][0].toUpperCase() + inname[i].substr(1);
         }
         let outname = inname.join(" ");
 
-        const type1 = genlist[generation-1][dexnum].types.primary.charAt(0).toUpperCase() + genlist[generation-1][dexnum].types.primary.slice(1);
+        const type1 = genlist[generation-1][dexnum-1].types.primary.charAt(0).toUpperCase() + genlist[generation-1][dexnum-1].types.primary.slice(1);
         let type2 = "None";
-        if (genlist[generation-1][dexnum].types.secondary) {
-            type2 = genlist[generation-1][dexnum].types.secondary.charAt(0).toUpperCase() + genlist[generation-1][dexnum].types.secondary.slice(1);
+        if (genlist[generation-1][dexnum-1].types.secondary) {
+            type2 = genlist[generation-1][dexnum-1].types.secondary.charAt(0).toUpperCase() + genlist[generation-1][dexnum-1].types.secondary.slice(1);
         }
 
         // Generate a gender for the Pokemon.
-        const cmale = genlist[generation-1][dexnum].spawninfo.gender.male;
-        const cfemale = genlist[generation-1][dexnum].spawninfo.gender.female;
+        const cmale = genlist[generation-1][dexnum-1].spawninfo.gender.male;
+        const cfemale = genlist[generation-1][dexnum-1].spawninfo.gender.female;
         const genval = Math.random().toFixed(3);
 
         let outgender = "Genderless";
@@ -54,28 +54,28 @@ module.exports = {
         // Generate an ability for the Pokemon.
         let inability = "";
         let pabilval = Math.random().toFixed(3)
-        if (genlist[generation-1][dexnum].abilities.first && genlist[generation-1][dexnum].abilities.second && genlist[generation-1][dexnum].abilities.hidden) {
+        if (genlist[generation-1][dexnum-1].abilities.first && genlist[generation-1][dexnum-1].abilities.second && genlist[generation-1][dexnum-1].abilities.hidden) {
             if (pabilval < 0.01) {
-                inability = genlist[generation-1][dexnum].abilities.hidden;
+                inability = genlist[generation-1][dexnum-1].abilities.hidden;
             } else if (pabilval >= 0.01 && pabilval < 0.505) {
-                inability = genlist[generation-1][dexnum].abilities.first;
+                inability = genlist[generation-1][dexnum-1].abilities.first;
             } else {
-                inability = genlist[generation-1][dexnum].abilities.second;
+                inability = genlist[generation-1][dexnum-1].abilities.second;
             }
-        } else if (genlist[generation-1][dexnum].abilities.first && genlist[generation-1][dexnum].abilities.second)  {
+        } else if (genlist[generation-1][dexnum-1].abilities.first && genlist[generation-1][dexnum-1].abilities.second)  {
             if (pabilval < 0.5) {
-                inability = genlist[generation-1][dexnum].abilities.first;
+                inability = genlist[generation-1][dexnum-1].abilities.first;
             } else {
-                inability = genlist[generation-1][dexnum].abilities.second;
+                inability = genlist[generation-1][dexnum-1].abilities.second;
             }
-        } else if (genlist[generation-1][dexnum].abilities.first && genlist[generation-1][dexnum].abilities.hidden) {
+        } else if (genlist[generation-1][dexnum-1].abilities.first && genlist[generation-1][dexnum-1].abilities.hidden) {
             if (pabilval < 0.01) {
-                inability = genlist[generation-1][dexnum].abilities.hidden;
+                inability = genlist[generation-1][dexnum-1].abilities.hidden;
             } else {
-                inability = genlist[generation-1][dexnum].abilities.first;
+                inability = genlist[generation-1][dexnum-1].abilities.first;
             }
         } else {
-            inability = genlist[generation-1][dexnum].abilities.first;
+            inability = genlist[generation-1][dexnum-1].abilities.first;
         }
 
         inability = inability.split(" ");
@@ -86,7 +86,7 @@ module.exports = {
 
         // Generate a level for the Pokemon.
         let level = 0;
-        switch(genlist[generation-1][dexnum].spawninfo.rarity) {
+        switch(genlist[generation-1][dexnum-1].spawninfo.rarity) {
             case 'mythic':
                 level = 70 + Math.floor((Math.random() * 30) + 1);
                 break;
@@ -125,12 +125,12 @@ module.exports = {
         const ivspd = Math.floor((Math.random() * 32));
 
         // Calculate total stats for the Pokemon.
-        const totalhp = Math.round(((((2 * genlist[generation-1][dexnum].stats.hp + ivhp) * level) / 100) + level + 10));
-        const totalatk = Math.round(((((2 * genlist[generation-1][dexnum].stats.atk + ivatk) * level) / 100) + 5) * natures[nval].atkmod);
-        const totaldef = Math.round(((((2 * genlist[generation-1][dexnum].stats.def + ivdef) * level) / 100) + 5) * natures[nval].defmod);
-        const totalspatk = Math.round(((((2 * genlist[generation-1][dexnum].stats.spatk + ivspatk) * level) / 100) + 5) * natures[nval].spatkmod);
-        const totalspdef = Math.round(((((2 * genlist[generation-1][dexnum].stats.spdef + ivspdef) * level) / 100) + 5) * natures[nval].spdefmod);
-        const totalspd = Math.round(((((2 * genlist[generation-1][dexnum].stats.spd + ivspd) * level) / 100) + 5) * natures[nval].spdmod);
+        const totalhp = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.hp + ivhp) * level) / 100) + level + 10));
+        const totalatk = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.atk + ivatk) * level) / 100) + 5) * natures[nval].atkmod);
+        const totaldef = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.def + ivdef) * level) / 100) + 5) * natures[nval].defmod);
+        const totalspatk = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.spatk + ivspatk) * level) / 100) + 5) * natures[nval].spatkmod);
+        const totalspdef = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.spdef + ivspdef) * level) / 100) + 5) * natures[nval].spdefmod);
+        const totalspd = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.spd + ivspd) * level) / 100) + 5) * natures[nval].spdmod);
 
         // Check if the Pokemon is shiny.
         let sval = Math.random().toFixed(6);
@@ -154,12 +154,12 @@ module.exports = {
             "level": level,
             "nature": nature,
             "basestats": {
-                "hp": genlist[generation-1][dexnum].stats.hp,
-                "atk": genlist[generation-1][dexnum].stats.atk,
-                "def": genlist[generation-1][dexnum].stats.def,
-                "spatk": genlist[generation-1][dexnum].stats.spatk,
-                "spdef": genlist[generation-1][dexnum].stats.spdef,
-                "spd": genlist[generation-1][dexnum].stats.spd
+                "hp": genlist[generation-1][dexnum-1].stats.hp,
+                "atk": genlist[generation-1][dexnum-1].stats.atk,
+                "def": genlist[generation-1][dexnum-1].stats.def,
+                "spatk": genlist[generation-1][dexnum-1].stats.spatk,
+                "spdef": genlist[generation-1][dexnum-1].stats.spdef,
+                "spd": genlist[generation-1][dexnum-1].stats.spd
             },
             "ivs": {
                 "hp": ivhp,
@@ -190,6 +190,17 @@ module.exports = {
         
         console.log(pkmn);
 
-        await interaction.reply();
+        // Push the Pokemon object to DynamoDB.
+        const pkmnParams = {
+            TableName: "pkmn-delirious-table",
+            Item: {
+                entity_id: { S: uuid },
+                info: { S: JSON.stringify(pkmn)}
+            }
+        };
+
+        await ddbClient.send(new ddb.PutItemCommand(pkmnParams));
+
+        await interaction.reply("You caught " + outname + "!");
     }
 };

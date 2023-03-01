@@ -79,21 +79,21 @@ client.on('interactionCreate', async interaction => {
             }
     
             // Generate and format all the information for the new Pokemon.
-            const inname = genlist[generation-1][dexnum].name.split(" ");
+            const inname = genlist[generation-1][dexnum-1].name.split(" ");
             for (let i = 0; i < inname.length; i++) {
                 inname[i] = inname[i][0].toUpperCase() + inname[i].substr(1);
             }
             let outname = inname.join(" ");
     
-            const type1 = genlist[generation-1][dexnum].types.primary.charAt(0).toUpperCase() + genlist[generation-1][dexnum].types.primary.slice(1);
+            const type1 = genlist[generation-1][dexnum-1].types.primary.charAt(0).toUpperCase() + genlist[generation-1][dexnum-1].types.primary.slice(1);
             let type2 = "None";
-            if (genlist[generation-1][dexnum].types.secondary) {
-                type2 = genlist[generation-1][dexnum].types.secondary.charAt(0).toUpperCase() + genlist[generation-1][dexnum].types.secondary.slice(1);
+            if (genlist[generation-1][dexnum-1].types.secondary) {
+                type2 = genlist[generation-1][dexnum-1].types.secondary.charAt(0).toUpperCase() + genlist[generation-1][dexnum-1].types.secondary.slice(1);
             }
     
             // Generate a gender for the Pokemon.
-            const cmale = genlist[generation-1][dexnum].spawninfo.gender.male;
-            const cfemale = genlist[generation-1][dexnum].spawninfo.gender.female;
+            const cmale = genlist[generation-1][dexnum-1].spawninfo.gender.male;
+            const cfemale = genlist[generation-1][dexnum-1].spawninfo.gender.female;
             const genval = Math.random().toFixed(3);
     
             let outgender = "Genderless";
@@ -108,28 +108,28 @@ client.on('interactionCreate', async interaction => {
             // Generate an ability for the Pokemon.
             let inability = "";
             let pabilval = Math.random().toFixed(3)
-            if (genlist[generation-1][dexnum].abilities.first && genlist[generation-1][dexnum].abilities.second && genlist[generation-1][dexnum].abilities.hidden) {
+            if (genlist[generation-1][dexnum-1].abilities.first && genlist[generation-1][dexnum-1].abilities.second && genlist[generation-1][dexnum-1].abilities.hidden) {
                 if (pabilval < 0.01) {
-                    inability = genlist[generation-1][dexnum].abilities.hidden;
+                    inability = genlist[generation-1][dexnum-1].abilities.hidden;
                 } else if (pabilval >= 0.01 && pabilval < 0.505) {
-                    inability = genlist[generation-1][dexnum].abilities.first;
+                    inability = genlist[generation-1][dexnum-1].abilities.first;
                 } else {
-                    inability = genlist[generation-1][dexnum].abilities.second;
+                    inability = genlist[generation-1][dexnum-1].abilities.second;
                 }
-            } else if (genlist[generation-1][dexnum].abilities.first && genlist[generation-1][dexnum].abilities.second)  {
+            } else if (genlist[generation-1][dexnum-1].abilities.first && genlist[generation-1][dexnum-1].abilities.second)  {
                 if (pabilval < 0.5) {
-                    inability = genlist[generation-1][dexnum].abilities.first;
+                    inability = genlist[generation-1][dexnum-1].abilities.first;
                 } else {
-                    inability = genlist[generation-1][dexnum].abilities.second;
+                    inability = genlist[generation-1][dexnum-1].abilities.second;
                 }
-            } else if (genlist[generation-1][dexnum].abilities.first && genlist[generation-1][dexnum].abilities.hidden) {
+            } else if (genlist[generation-1][dexnum-1].abilities.first && genlist[generation-1][dexnum-1].abilities.hidden) {
                 if (pabilval < 0.01) {
-                    inability = genlist[generation-1][dexnum].abilities.hidden;
+                    inability = genlist[generation-1][dexnum-1].abilities.hidden;
                 } else {
-                    inability = genlist[generation-1][dexnum].abilities.first;
+                    inability = genlist[generation-1][dexnum-1].abilities.first;
                 }
             } else {
-                inability = genlist[generation-1][dexnum].abilities.first;
+                inability = genlist[generation-1][dexnum-1].abilities.first;
             }
     
             inability = inability.split(" ");
@@ -154,12 +154,12 @@ client.on('interactionCreate', async interaction => {
             const ivspd = Math.floor((Math.random() * 32));
     
             // Calculate total stats for the Pokemon.
-            const totalhp = Math.round(((((2 * genlist[generation-1][dexnum].stats.hp + ivhp) * level) / 100) + level + 10));
-            const totalatk = Math.round(((((2 * genlist[generation-1][dexnum].stats.atk + ivatk) * level) / 100) + 5) * natures[nval].atkmod);
-            const totaldef = Math.round(((((2 * genlist[generation-1][dexnum].stats.def + ivdef) * level) / 100) + 5) * natures[nval].defmod);
-            const totalspatk = Math.round(((((2 * genlist[generation-1][dexnum].stats.spatk + ivspatk) * level) / 100) + 5) * natures[nval].spatkmod);
-            const totalspdef = Math.round(((((2 * genlist[generation-1][dexnum].stats.spdef + ivspdef) * level) / 100) + 5) * natures[nval].spdefmod);
-            const totalspd = Math.round(((((2 * genlist[generation-1][dexnum].stats.spd + ivspd) * level) / 100) + 5) * natures[nval].spdmod);
+            const totalhp = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.hp + ivhp) * level) / 100) + level + 10));
+            const totalatk = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.atk + ivatk) * level) / 100) + 5) * natures[nval].atkmod);
+            const totaldef = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.def + ivdef) * level) / 100) + 5) * natures[nval].defmod);
+            const totalspatk = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.spatk + ivspatk) * level) / 100) + 5) * natures[nval].spatkmod);
+            const totalspdef = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.spdef + ivspdef) * level) / 100) + 5) * natures[nval].spdefmod);
+            const totalspd = Math.round(((((2 * genlist[generation-1][dexnum-1].stats.spd + ivspd) * level) / 100) + 5) * natures[nval].spdmod);
     
             // Generate an ID for the Pokemon.
             const uuid = crypto.randomUUID();
@@ -167,7 +167,7 @@ client.on('interactionCreate', async interaction => {
             // Create the Pokemon object.
             const starterpkmn = {
                 "pkmnID": uuid,
-                "dexnum": dexnum,
+                "dexnum-1": dexnum-1,
                 "name": outname,
                 "type1": type1,
                 "type2": type2,
@@ -176,12 +176,12 @@ client.on('interactionCreate', async interaction => {
                 "level": 5,
                 "nature": nature,
                 "basestats": {
-                    "hp": genlist[generation-1][dexnum].stats.hp,
-                    "atk": genlist[generation-1][dexnum].stats.atk,
-                    "def": genlist[generation-1][dexnum].stats.def,
-                    "spatk": genlist[generation-1][dexnum].stats.spatk,
-                    "spdef": genlist[generation-1][dexnum].stats.spdef,
-                    "spd": genlist[generation-1][dexnum].stats.spd
+                    "hp": genlist[generation-1][dexnum-1].stats.hp,
+                    "atk": genlist[generation-1][dexnum-1].stats.atk,
+                    "def": genlist[generation-1][dexnum-1].stats.def,
+                    "spatk": genlist[generation-1][dexnum-1].stats.spatk,
+                    "spdef": genlist[generation-1][dexnum-1].stats.spdef,
+                    "spd": genlist[generation-1][dexnum-1].stats.spd
                 },
                 "ivs": {
                     "hp": ivhp,
