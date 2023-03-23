@@ -34,6 +34,17 @@ module.exports = {
             return(console.log("Directing " + interaction.user + " to register first."));
         }
 
+        // Pull the trainer's profile.
+        const trainerParams = {
+            TableName: "pkmn-delirious-table",
+            Key: {
+                'entity_id': {S: interaction.user.id}
+            }
+        }
+
+        const trainerData = await ddbClient.send(new ddb.GetItemCommand(trainerParams));
+        const trainerProfile = JSON.parse(trainerData.Item.info.S);
+
         // Determine which generation the Pokemon is from.
         const dexnum = Math.floor((Math.random() * 151) + 1);
         let generation = 0;
@@ -206,6 +217,25 @@ module.exports = {
         };
         
         console.log(pkmn);
+
+        // Add the Pokemon to the trainer's PC and update the DynamoDB trainer profile.
+        trainerProfile.pokemon.pc.push(uuid);
+        const updatedTrainerParams = {
+            TableName: "pkmn-delirious-table",
+            Key: {
+                'entity_id': {S: interaction.user.id}
+            },
+            ExpressionAttributeNames: {
+                "#I": "info"
+            },
+            ExpressionAttributeValues: {
+                ":i": {S: JSON.stringify(trainerProfile)}
+            },
+            UpdateExpression: "SET #I = :i",
+            ReturnValues: "ALL_NEW"
+        };
+
+        await ddbClient.send(new ddb.UpdateItemCommand(updatedTrainerParams));
 
         // Push the Pokemon object to DynamoDB.
         const pkmnParams = {

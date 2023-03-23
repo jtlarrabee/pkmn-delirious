@@ -70,6 +70,17 @@ client.on('interactionCreate', async interaction => {
                 starter = 'Squirtle';
             }
 
+            // Pull the trainer's profile.
+            const trainerParams = {
+                TableName: "pkmn-delirious-table",
+                Key: {
+                    'entity_id': {S: interaction.user.id}
+                }
+            }
+
+            const trainerData = await ddbClient.send(new ddb.GetItemCommand(trainerParams));
+            const trainerProfile = JSON.parse(trainerData.Item.info.S);
+
             await interaction.update({ content: 'You have selected ' + starter + ' as your starter Pokémon! Your registration will be completed shortly.', components:[]});
 
             const dexnum = interaction.values;
@@ -209,6 +220,25 @@ client.on('interactionCreate', async interaction => {
                 },
                 "shiny": false
             };
+
+            // Add the Pokemon to the trainer's PC and update the DynamoDB trainer profile.
+            trainerProfile.pokemon.pc.push(uuid);
+            const updatedTrainerParams = {
+                TableName: "pkmn-delirious-table",
+                Key: {
+                    'entity_id': {S: interaction.user.id}
+                },
+                ExpressionAttributeNames: {
+                    "#I": "info"
+                },
+                ExpressionAttributeValues: {
+                    ":i": {S: JSON.stringify(trainerProfile)}
+                },
+                UpdateExpression: "SET #I = :i",
+                ReturnValues: "ALL_NEW"
+            };
+
+            await ddbClient.send(new ddb.UpdateItemCommand(updatedTrainerParams));
 
             // Push the Pokemon object to DynamoDB.
             const regPkmnParams = {
